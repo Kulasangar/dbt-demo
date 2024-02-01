@@ -41,3 +41,9 @@ models:
     example:
       +materialized: table
       snowflake_warehouse: compute_wh
+    staging:
+      materialized: view
+      snowflake_warehouse: compute_wh
+    marts:
+      materialized: table
+      snowflake_warehouse: compute_wh
